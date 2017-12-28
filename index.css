@@ -1,0 +1,42 @@
+/*
+* @Author: lenovo
+* @Date:   2017-12-26 11:14:43
+* @Last Modified by:   lenovo
+* @Last Modified time: 2017-12-26 16:26:02
+*/
+body {
+  width: 200px; }
+
+.one span {
+  color: red; }
+
+a {
+  font-size: 12px;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 50px; }
+  .two-children a {
+    font-size: 20px; }
+
+.mybtn {
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  border-radius: 5px; }
+
+.mixin, .extend, .placeholder {
+  background-color: black;
+  color: #fff;
+  width: 100px;
+  height: 50px; }
+
+.extend, .placeholder {
+  background-color: red; }
+
+.placeholder {
+  float: left; }
+
+.placeholder {
+  width: 200px; }
+
+/*# sourceMappingURL=index.css.map */

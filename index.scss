@@ -1,0 +1,67 @@
+/*
+* @Author: lenovo
+* @Date:   2017-12-26 11:14:43
+* @Last Modified by:   lenovo
+* @Last Modified time: 2017-12-26 16:44:46
+*/
+$width:200px;
+$color:black !default;
+$small:12px;
+$big:20px;
+body{
+	width:$width;
+}
+.one{
+	$color:red;
+	span{
+		color: $color;
+	}
+}
+a{
+	font-size:$small;
+	display:block;
+	margin:{
+		top:20px;
+		bottom: 50px;
+	}
+	.two-children  & {
+		font-size: $big;
+	}
+}
+
+@mixin mybtn{
+	width:100px;
+	height:20px;
+	text-align:center;
+	border-radius:5px;
+}
+
+.mybtn{
+	@include mybtn;
+}
+
+
+@mixin width($width,$height){
+	width:$width;
+	height:$height;
+}
+.mixin{
+	background-color:black;
+	color:#fff;
+	@include width(100px,50px);
+}
+
+.extend{
+	@extend .mixin;
+	background-color:red;
+}
+
+%fl{
+	float:left;
+}
+.placeholder{
+	@extend %fl;
+	@extend .extend;
+	width:200px;
+}
+
